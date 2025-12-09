@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "test:integration": "jest tests/integration",
     "start": "node src/server.js"
   },
   "dependencies": {
