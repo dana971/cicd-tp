@@ -1,0 +1,111 @@
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2mtests/e2e/[22m[1me2e.test.js[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2mtests/unit/[22m[1mgreeting.test.js[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2mtests/integration/[22m[1mapp.test.js[22m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2mtests/integration/[22m[1mserver.test.js[22m
+[1m[31m  [1m● [22m[1mServer › GET /hello/:name? › should return a greeting with the provided name[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello Alice"[39m
+    Received: [31m"Hello [7mworld! From [27mAlice"[39m
+[2m[22m
+[2m    [0m [90m  8 |[39m[22m
+[2m     [90m  9 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 10 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello Alice"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 11 |[39m     })[33m;[39m[22m
+[2m     [90m 12 |[39m[22m
+[2m     [90m 13 |[39m     it([32m"should return a default greeting when no name is provided"[39m[33m,[39m [36masync[39m () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:10:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mServer › GET /hello/:name? › should return a default greeting when no name is provided[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello [7mW[27morld"[39m
+    Received: [31m"Hello [7mw[27morld[7m![27m"[39m
+[2m[22m
+[2m    [0m [90m 15 |[39m[22m
+[2m     [90m 16 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 17 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello World"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 18 |[39m     })[33m;[39m[22m
+[2m     [90m 19 |[39m[22m
+[2m     [90m 20 |[39m     it([32m"should handle empty string as name"[39m[33m,[39m [36masync[39m () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:17:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mServer › GET /hello/:name? › should handle empty string as name[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello [7mW[27morld"[39m
+    Received: [31m"Hello [7mw[27morld[7m![27m"[39m
+[2m[22m
+[2m    [0m [90m 22 |[39m[22m
+[2m     [90m 23 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 24 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello World"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 25 |[39m     })[33m;[39m[22m
+[2m     [90m 26 |[39m   })[33m;[39m[22m
+[2m     [90m 27 |[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:24:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mServer › POST /hello › should return a greeting with the name from header[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello Bob"[39m
+    Received: [31m"Hello [7mworld! From [27mBob"[39m
+[2m[22m
+[2m    [0m [90m 33 |[39m[22m
+[2m     [90m 34 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 35 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello Bob"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 36 |[39m     })[33m;[39m[22m
+[2m     [90m 37 |[39m[22m
+[2m     [90m 38 |[39m     it([32m"should return a default greeting when no header is provided"[39m[33m,[39m [36masync[39m () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:35:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mServer › POST /hello › should return a default greeting when no header is provided[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello [7mW[27morld"[39m
+    Received: [31m"Hello [7mw[27morld[7m![27m"[39m
+[2m[22m
+[2m    [0m [90m 40 |[39m[22m
+[2m     [90m 41 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 42 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello World"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 43 |[39m     })[33m;[39m[22m
+[2m     [90m 44 |[39m[22m
+[2m     [90m 45 |[39m     it([32m"should handle empty string as header value"[39m[33m,[39m [36masync[39m () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:42:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mServer › POST /hello › should handle empty string as header value[39m[22m
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"Hello [7mW[27morld"[39m
+    Received: [31m"Hello [7mw[27morld[7m![27m"[39m
+[2m[22m
+[2m    [0m [90m 49 |[39m[22m
+[2m     [90m 50 |[39m       expect(response[33m.[39mstatus)[33m.[39mtoBe([35m200[39m)[33m;[39m[22m
+[2m    [31m[1m>[22m[2m[39m[90m 51 |[39m       expect(response[33m.[39mtext)[33m.[39mtoBe([32m"Hello World"[39m)[33m;[39m[22m
+[2m     [90m    |[39m                             [31m[1m^[22m[2m[39m[22m
+[2m     [90m 52 |[39m     })[33m;[39m[22m
+[2m     [90m 53 |[39m   })[33m;[39m[22m
+[2m     [90m 54 |[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.toBe ([22m[2m[0m[36mtests/integration/server.test.js[39m[0m[2m:51:29)[22m[2m[22m
+
+[1mTest Suites: [22m[1m[31m1 failed[39m[22m, [1m[32m3 passed[39m[22m, 4 total
+[1mTests:       [22m[1m[31m6 failed[39m[22m, [1m[32m4 passed[39m[22m, 10 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.675 s
+[2mRan all test suites[22m[2m.[22m
