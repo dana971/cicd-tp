@@ -107,5 +107,5 @@
 [1mTest Suites: [22m[1m[31m1 failed[39m[22m, [1m[32m3 passed[39m[22m, 4 total
 [1mTests:       [22m[1m[31m6 failed[39m[22m, [1m[32m4 passed[39m[22m, 10 total
 [1mSnapshots:   [22m0 total
-[1mTime:[22m        1.675 s
+[1mTime:[22m        1.386 s, estimated 2 s
 [2mRan all test suites[22m[2m.[22m
